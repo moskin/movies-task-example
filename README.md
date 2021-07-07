@@ -9,7 +9,7 @@ Using this project, you can view, delete existing movies, add new items to the b
 
 ## Project Installation
 Make sure all npm packages are installed on your computer. Otherwise, perform the following steps: 
-### `git clone "link to project""`
+### `git clone https://github.com/moskin/movies-task-example.git`
 ### `npm install`
 ### `npm start`
 
