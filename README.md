@@ -13,7 +13,10 @@ Make sure all npm packages are installed on your computer. Otherwise, perform th
 ### `npm install`
 ### `npm start`
 
-Enjoy!!
+### Notes
+Everyone who uses this project and wants to upload the external `.txt` file with movies data needs to have a valid Authorization token. This project was developed with the authorization check. Since the hardcoded user exists in the project (and does not have a token), you may have an issue while attempting the first file upload. However, everything will work as it should when you add a file the second time - a new Authorization token will be created for you.
+
+Enjoy!
 
 
 
