@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 100%;
+    background-color: #f0f4f7;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+h1, h2 {
+    color: #6e768d;
+    font-size: 2em;
+    margin: 20px 0px;
+    letter-spacing: 0.04em;
+}
+
+#search {
+    font-family: "Montserrat", sans-serif;
+    height: 35px;
+    color: #696d8c;
+    border-radius: 4px;
+    border: 1px solid #696d8c;
+    margin-right: 20px;
+    text-align: center;
+    box-shadow: 0px 3px 0px 0px rgb(105, 109, 140);
+}
+
+
+
+#year, #format {
+    padding-left: 6px;
+}
+
+#title, #actors {
+    padding-left: 10px;
+}
+
+.appWrapper {
+    width: 950px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.generalWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+}
+
+.generalWrapper :hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+.createForm {
+    width: 100%;
+    max-width: 463px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.createForm input, .createForm select {
+    font-family: "Montserrat", sans-serif;
+    height: 35px;
+    color: #696d8c;
+    border-radius: 4px;
+    border: 1px solid #696d8c;
+    box-shadow: 0px 3px 0px 0px rgb(105, 109, 140);
+}
+
+.movieCard {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    color: #696d8c;
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.movieCard :hover {
+    transform: none;
+}
+
+
+.movieCardButtons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+.cardInfo {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+    border-top: 2px solid #ebedec;
+    border-bottom: 2px solid #ebedec;
+
+}
+
+
+h4 {
+    font-weight: 400;
+}
+
+h3 {
+    margin: 20px 0px;
+}
+
+ul {
+    list-style: none;
+    margin: 10px;
+}
+
+button {
+    outline: none;
+    color: white;
+    border: 0;
+    background-color: #71ce73;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 11px;
+    box-shadow: 0px 3px 0px 0px rgba(102, 172, 100, 1);
+    letter-spacing: 0.07em;
+    transition: all 0.4s ease;
+}
+
+.labelUploadFile {
+    outline: none;
+    color: #6e768d;
+    cursor: pointer;
+    padding: 7px 10px;
+    letter-spacing: 0.07em;
+}
+
+#uploadSendButtonStyle {
+    box-shadow: 0px 3px 0px 0px rgb(102 172 100);
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 40px 29px -19px rgba(102, 172, 100, 0.9);
+}
+
+button:active {
+    box-shadow: inset 0 0 10px 1px rgba(102, 165, 100, 1), 0px 40px 29px -19px rgba(102, 172, 100, 0.95);
+    transform: scale(0.95) translateY(-9px);
+}
+
+
+label {
+    color: #73889c;
+    letter-spacing: 0.04em;
+}
+
+.movieCardData, .movieCardButtons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.fullPage {
+    color: #6e768d;
+}
+
+.hoverText:hover {
+    color: #71ce73;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.fullPage h1 {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    /*border-top: 2px solid #ebedec;*/
+    border-bottom: 2px solid #ebedec;
+}
+
+
+.fullMovieInfoContainer ul {
+    margin: 0;
+}
+
+.hvr-sweep-to-top {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.3s;
+    padding: 8px 15px;
+    color: #6e768d;
+    text-decoration: none;
+}
+
+.hvr-sweep-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #71ce73;
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+    color: white;
+}
+
+.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+    transform: scaleY(1);
+}
